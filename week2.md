@@ -31,14 +31,14 @@ after installing these tools we can observe the system in different states.
 
 ### Image server idle state using htop
 
-![](/server_idle_state.png)
+![](images/server_idle_state.png)
 
 NOTE : we can use the btop tool which give us more interactive version of the htop even though htop itself is a interactive version of top we can use btop for even more better visual representation of the system. 
 
 
 ### Image Server idle state using btop 
 
-![](/server_idle_state_btop.png)
+![](images/server_idle_state_btop.png)
 
 
 
@@ -49,7 +49,7 @@ we can observe the machine state in idle state , the CPU usages is 0% and memory
 
 ### 1.4 Observation during updates(server)
 
-![](/update(server).png)
+![](images/update(server).png)
 
 During updates we were able to see a spike in the CPU usages and network usages. 
 
@@ -57,12 +57,12 @@ During updates we were able to see a spike in the CPU usages and network usages.
 
 ### Image Workstation in idle state usign htop. 
 
-![](/workstation_idle_state_using_htop.png)
+![](images/workstation_idle_state_using_htop.png)
 
 
 ### Image Workstation in idle state using btop.
 
-![](/workstation_idle_state(2).png)
+![](images/workstation_idle_state(2).png)
 
 ### Observation 
 
@@ -75,7 +75,7 @@ It is quite noticeble that there is more overall usage in GUI system ( Workstati
 
 ### 1.4 Observation during updates(Workstation)
 
-![](/workstatioN(update).png)
+![](images/workstatioN(update).png)
 
 During updates we were able to see a 100% spike in one of the core in  CPU usages and network usages. 
 
@@ -109,7 +109,7 @@ After using the steps mentioned above we can securely ssh in to our server from 
 
 ### Successful Remote SSH connection 
 
-![](/ssh(login).png)
+![](images/ssh(login).png)
 
 
 
@@ -129,7 +129,7 @@ we can check the firewall status using sudo ufw status verbose
 
 ### Image : firewall configuration 
 
-![](/firewall(1).png)
+![](images/firewall(1).png)
 
 
 ## 3.2 SSH hardening
@@ -143,13 +143,13 @@ We can make some changes in the sshd_config file which is by default located at 
 
 This settings will disable password based authentication. 
 
-![](/ssh_harden(1).png)
+![](images/ssh_harden(1).png)
 
 2. Port (custom port)
 
 This settings will change the default port for ssh.
 
-![](/ssh_harden(2).png)
+![](images/ssh_harden(2).png)
 
 
 ## 3.2 Automatic Updates
@@ -168,7 +168,7 @@ We can validate the service using :
 
 sudo systemctl list-timers apt-daily*
 
-![](/automatic_updates.png)
+![](images/automatic_updates.png)
 
 
 ## 3.3 Security (IPS)
