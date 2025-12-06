@@ -38,7 +38,7 @@ NOTE : we can use the btop tool which give us more interactive version of the ht
 
 ### Image Server idle state using btop 
 
-![](images/server_idle_state_btop.png)
+![](/server_idle_state_btop.png)
 
 
 
@@ -49,7 +49,7 @@ we can observe the machine state in idle state , the CPU usages is 0% and memory
 
 ### 1.4 Observation during updates(server)
 
-![](images/update(server).png)
+![](/update(server).png)
 
 During updates we were able to see a spike in the CPU usages and network usages. 
 
@@ -57,12 +57,12 @@ During updates we were able to see a spike in the CPU usages and network usages.
 
 ### Image Workstation in idle state usign htop. 
 
-![](images/workstation_idle_state_using_htop.png)
+![](/workstation_idle_state_using_htop.png)
 
 
 ### Image Workstation in idle state using btop.
 
-![](images/workstation_idle_state(2).png)
+![](/workstation_idle_state(2).png)
 
 ### Observation 
 
@@ -75,7 +75,7 @@ It is quite noticeble that there is more overall usage in GUI system ( Workstati
 
 ### 1.4 Observation during updates(Workstation)
 
-![](images/workstatioN(update).png)
+![](/workstatioN(update).png)
 
 During updates we were able to see a 100% spike in one of the core in  CPU usages and network usages. 
 
@@ -109,7 +109,7 @@ After using the steps mentioned above we can securely ssh in to our server from 
 
 ### Successful Remote SSH connection 
 
-![](images/ssh(login).png)
+![](/ssh(login).png)
 
 
 
@@ -129,7 +129,7 @@ we can check the firewall status using sudo ufw status verbose
 
 ### Image : firewall configuration 
 
-![](images/firewall(1).png)
+![](/firewall(1).png)
 
 
 ## 3.2 SSH hardening
@@ -143,13 +143,13 @@ We can make some changes in the sshd_config file which is by default located at 
 
 This settings will disable password based authentication. 
 
-![](images/ssh_harden(1).png)
+![](/ssh_harden(1).png)
 
 2. Port (custom port)
 
 This settings will change the default port for ssh.
 
-![](images/ssh_harden(2).png)
+![](/ssh_harden(2).png)
 
 
 ## 3.2 Automatic Updates
@@ -168,7 +168,7 @@ We can validate the service using :
 
 sudo systemctl list-timers apt-daily*
 
-![](images/automatic_updates.png)
+![](/automatic_updates.png)
 
 
 ## 3.3 Security (IPS)
@@ -183,4 +183,39 @@ sudo apt install fail2ban -y
 
 The default configuration is sufficient to start protecting ssh, all configuration is done in the /etc/fail2ban/jail.local
 
+we can create one if it does not exists usign sudo nano /etc/fail2ban/jail.local
 
+Inside this file we need to write : 
+
+![](images/IPS(config).png)
+
+
+After this configuration : 
+
+sudo systemctl restart fail2ban
+sudo fail2ban-client status sshd
+
+![](images/IPS(final).png)
+
+## 4. Threat Model 
+
+### 1. Threat MOdel Identification 
+
+1. Denail of Service (DoS)
+
+Dos affects the availablity of the system in the CIA triad. It aims to exhaust our resouces by sending enormous amount of traffic in our server. 
+
+**Mitigation** : We have configured firewall to deny all incoming traffic this reduces the impact and prevents the system from Dos.
+
+
+2. Unpatched Security Updates 
+
+Leaving our system outdated is a security threat in itself any missed security update can result in system being infected by malicious malware. 
+
+**Mitigation** : we have configured our system to automatically update the available security patches using unattended-upgrades package.
+
+3. Information Disclosure via Compromised SSH Credentials. 
+
+Default SSH configuration file is configured to accept password based authentication which invites malicious attackers to use bruteforcing tools to hijack our server. A result of successful bruteforce login can have devastating results on peoples trust, public reputation and other compliance consiquences.
+
+**Mitigation** : By changing the default port for ssh and using key-based authentication we have protected our sever from password-based attacks.
