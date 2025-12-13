@@ -40,6 +40,24 @@ After these steps we can login without using password.
 
 we can modify the sshd_config to acccept only key to truly verify key based authentication. 
 
+## Firewall configuration Documentation
+
+``` bash 
+
+# enable the firewall
+sudo ufw enable
+
+# allow ssh from one ip only.
+
+sudo ufw allow from 10.0.2.3 to any port 22 proto tcp
+
+#view the firewall status
+
+sudo ufw status numbered
+
+
+```
+
 
 ## Configuration File comparison ( before vs after)
 
