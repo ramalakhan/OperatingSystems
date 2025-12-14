@@ -1,56 +1,47 @@
 <div align="center">
 
-# 🛡️ Server Administration & Security Journal
-### Coursework Assessment Dashboard
-
-![Status](https://img.shields.io/badge/Status-Complete-success?style=for-the-badge)
-![Course](https://img.shields.io/badge/Course-Server_Admin-blue?style=for-the-badge)
-![Year](https://img.shields.io/badge/Year-2025-orange?style=for-the-badge)
+# 🖥️ Operating System Coursework 2025
+### Student Name: Ram Lakhan Kewat | ID: A00025760
 
 </div>
 
 ---
 
-## 👤 Student Information
-
-| **Role** | **Details** |
-| :--- | :--- |
-| **Student Name** | **[Insert Your Name]** |
-| **Student ID** | **[Insert Your ID]** |
-| **Instructor** | **[Insert Instructor Name]** |
+## 📖 Introduction
+Welcome to my Operating System portfolio. This journal documents the complete journey of deploying, configuring, and hardening a Linux-based server environment. Over the course of seven weeks, I have transformed a bare-metal virtual machine into a secure, performance-optimised web server, documenting every command, configuration, and challenge encountered along the way.
 
 ---
 
-## 🎯 Coursework Objectives
-This journal documents the practical implementation of server administration tasks, focusing on:
-* **Infrastructure Management:** Deploying and configuring Linux servers.
-* **Security Hardening:** Implementing firewalls (UFW), SSH keys, and intrusion prevention (Fail2Ban).
-* **Performance Analysis:** conducting stress tests (CPU/RAM/IO) and optimizing bottlenecks.
-* **System Auditing:** Performing security scans with Lynis and Nmap.
+## 🎯 Learning Objectives
+Through this coursework, I have achieved the following key technical competencies:
+* **System Deployment:** Proficient in setting up Virtual Machines and managing Linux file systems.
+* **Security Administration:** Implemented strict access controls, SSH hardening, and Firewall (UFW) policies.
+* **Performance Engineering:** Conducted stress testing (CPU, RAM, I/O) and resolved network bottlenecks.
+* **Automation & Scripting:** Utilized Bash for automation and `cron` for scheduled system maintenance.
+* **Auditing & Compliance:** Performed industry-standard security audits using **Lynis** and **Nmap**.
 
 ---
 
-## 🚀 Weekly Progress Dashboard
+## 🚀 Coursework Navigation
+Click on the week number to view the detailed journal entry and evidence.
 
-Click the **Week Number** to navigate to the detailed journal entry.
-
-| Week | 📂 Topic / Phase | 📝 Description | ✅ Status |
+| Week | 📂 Topic | 📝 Description | ✅ Status |
 | :---: | :--- | :--- | :---: |
-| [**Week 1**](./week1.md) | **Introduction & Setup** | Virtual Machine creation and basic Linux installation. | ![Done](https://img.shields.io/badge/Completed-Success?style=flat-square&logo=checkmark) |
-| [**Week 2**](./week2.md) | **User Management** | Creating users, groups, and assigning sudo privileges. | ![Done](https://img.shields.io/badge/Completed-Success?style=flat-square&logo=checkmark) |
-| [**Week 3**](./week3.md) | **File Systems** | Permissions, ownership, and directory structures. | ![Done](https://img.shields.io/badge/Completed-Success?style=flat-square&logo=checkmark) |
-| [**Week 4**](./week4.md) | **Process Management** | Monitoring processes (top, ps) and background jobs. | ![Done](https://img.shields.io/badge/Completed-Success?style=flat-square&logo=checkmark) |
-| [**Week 5**](./week5.md) | **Network Config** | IP addressing, DNS, and SSH configuration. | ![Done](https://img.shields.io/badge/Completed-Success?style=flat-square&logo=checkmark) |
-| [**Week 6**](./week6.md) | **Performance Eval** | Stress testing, benchmarking, and optimization. | ![Done](https://img.shields.io/badge/Completed-Success?style=flat-square&logo=checkmark) |
-| [**Week 7**](./week7.md) | **Security Audit** | Final security hardening, Lynis audit, and review. | ![Done](https://img.shields.io/badge/Completed-Success?style=flat-square&logo=checkmark) |
+| [**Week 1**](./week1.md) | **Setup & Installation** | VM creation and OS installation. | ![Done](https://img.shields.io/badge/Completed-Success?style=flat-square&logo=checkmark) |
+| [**Week 2**](./week2.md) | **User Management** | Sudo privileges and group policies. | ![Done](https://img.shields.io/badge/Completed-Success?style=flat-square&logo=checkmark) |
+| [**Week 3**](./week3.md) | **File Systems** | Permissions and directory structures. | ![Done](https://img.shields.io/badge/Completed-Success?style=flat-square&logo=checkmark) |
+| [**Week 4**](./week4.md) | **Process Management** | Monitoring system resources. | ![Done](https://img.shields.io/badge/Completed-Success?style=flat-square&logo=checkmark) |
+| [**Week 5**](./week5.md) | **Network Config** | SSH, DNS, and IP configuration. | ![Done](https://img.shields.io/badge/Completed-Success?style=flat-square&logo=checkmark) |
+| [**Week 6**](./week6.md) | **Performance Eval** | Stress testing and optimization. | ![Done](https://img.shields.io/badge/Completed-Success?style=flat-square&logo=checkmark) |
+| [**Week 7**](./week7.md) | **Security Audit** | Lynis scanning and hardening. | ![Done](https://img.shields.io/badge/Completed-Success?style=flat-square&logo=checkmark) |
 
 ---
+
+## 🏁 Conclusion
+This portfolio demonstrates a fully documented learning progress on virtual server setup with ssh hardening . By systematically addressing performance bottlenecks  and applying rigorous security controls , the system now meets modern standards for reliability and safety. The documented evidence proves the successful application of Operating System theory into practical administration skills.
 
 <div align="center">
 
-### 📊 Overall Progress
-![Progress](https://progress-bar.dev/100/?scale=100&title=Coursework%20Completion&width=500&color=00ff00&suffix=%)
-
-*Generated via [Markdown Dashboard] - Last Updated: December 2025*
+![100% Complete](https://img.shields.io/badge/Coursework_Status-100%25_Complete-006400?style=for-the-badge&logo=target)
 
 </div>
